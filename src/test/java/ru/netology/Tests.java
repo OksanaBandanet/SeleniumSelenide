@@ -117,7 +117,7 @@ public class Tests {
         driver.findElement(By.tagName("button")).click();
 
         String expected = "Поле обязательно для заполнения";
-        String actual = driver.findElement(By.cssSelector("[data-test-id='name'].input_invalid .input__sub")).getText().trim();
+        String actual = driver.findElement(By.cssSelector("[data-test-id='phone'].input_invalid .input__sub")).getText().trim();
 
         assertEquals(expected, actual);
     }
